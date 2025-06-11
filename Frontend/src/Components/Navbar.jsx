@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom';
 import RouteLinks from './RouteLinks';
+// import { Link } from 'react-router-dom'
+// import RouteLinks from './RouteLinks';
 const Navbar = () => {
+
 
   const [Sticky, setSticky] = useState(false)
   useEffect(() => {

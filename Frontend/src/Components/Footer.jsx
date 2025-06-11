@@ -1,11 +1,12 @@
 import { FaFacebook, FaInstagram, FaTwitter, FaMapMarkerAlt, FaPhone, FaEnvelope, FaClock } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white pt-12 pb-6">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
-          
+
           {/* About Section */}
           <div>
             <h3 className="text-xl font-bold mb-4 text-amber-400">Sandwich Shop</h3>
@@ -29,11 +30,18 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4 text-amber-400">Quick Links</h3>
             <ul className="space-y-2">
-              <li><a href="/" className="text-gray-300 hover:text-amber-400 transition">Home</a></li>
+              {/* <li><a href="/" className="text-gray-300 hover:text-amber-400 transition">Home</a></li>
               <li><a href="/menu" className="text-gray-300 hover:text-amber-400 transition">Our Menu</a></li>
               <li><a href="/about" className="text-gray-300 hover:text-amber-400 transition">About Us</a></li>
               <li><a href="/gallery" className="text-gray-300 hover:text-amber-400 transition">Gallery</a></li>
-              <li><a href="/contact" className="text-gray-300 hover:text-amber-400 transition">Contact</a></li>
+              <li><a href="/contact" className="text-gray-300 hover:text-amber-400 transition">Contact</a></li> */}
+              <li><Link className="text-gray-300 hover:text-amber-400 transition" to='/'>Home</Link></li>
+              <li><Link className="text-gray-300 hover:text-amber-400 transition" to='/about'>About</Link></li>
+              <li><Link className="text-gray-300 hover:text-amber-400 transition" to='/contactus'>Contact</Link></li>
+              <li><Link className="text-gray-300 hover:text-amber-400 transition" to='/menu'>Menu</Link></li>
+              
+              
+              
             </ul>
           </div>
 
@@ -67,14 +75,14 @@ const Footer = () => {
               Subscribe to get updates on special offers and new menu items.
             </p>
             <form className="flex flex-col space-y-3">
-              <input 
-                type="email" 
-                placeholder="Your email address" 
+              <input
+                type="email"
+                placeholder="Your email address"
                 className="px-4 py-2 rounded bg-gray-800 border border-gray-700 focus:outline-none focus:border-amber-400"
                 required
               />
-              <button 
-                type="submit" 
+              <button
+                type="submit"
                 className="bg-amber-600 hover:bg-amber-700 text-white font-medium py-2 px-4 rounded transition"
               >
                 Subscribe

@@ -16,6 +16,9 @@ import Ex from './Pages/Ex'
 
 
 
+
+
+
 const App = () => {
   return (
     // <>
@@ -42,6 +45,7 @@ const App = () => {
         <Route path="/about" element={<About/>}/> 
         <Route path="/contactus" element={<ContactUs/>}/> 
         <Route path="/menu" element={<Menu/>}/>
+       
         {/* <Route path="/EX" element={<Ex/>}/> */}
       </Routes>
       {/* <Footer1/> */}

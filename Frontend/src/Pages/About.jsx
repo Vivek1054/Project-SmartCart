@@ -77,7 +77,7 @@ const About = () => {
           </div>
 
           {/* Testimonials */}
-          <div className="py-20 bg-base-300">
+          <div className="py-20 mb-10 bg-base-300">
             <div className="container mx-auto px-6 max-w-4xl text-center">
               <h2 className="text-4xl font-bold mb-12">What Our Customers Say</h2>
               <div className="card bg-base-100 shadow-xl">

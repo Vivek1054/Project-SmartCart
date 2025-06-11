@@ -5,12 +5,12 @@ const Cards = ({item}) => {
   const a="under budget"
   return (
     <>
-      <div className='mt-4 my-3 transition-transform hover:scale-90 active:scale-95 '>
+      <div className='mt-4 my-3 transition-transform hover:scale-105'>
         <div className="card bg-base-100 w-92 p-3 shadow-xl">
           <figure>
             <img
               src={item.image}
-              alt="Shoes" />
+              alt="Sandwich" />
           </figure>
           <div className="card-body">
             <h2 className="card-title">
